@@ -7,7 +7,7 @@ export const Login = ({auth}) => {
         return (
             <Container>
                 <Typography variant="h4" component="h1" gutterBottom>
-                    ログイン画面
+                    ログイン
                 </Typography>
                 <Button
                 variant="contained"
