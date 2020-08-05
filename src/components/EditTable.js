@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 });
 
 
-export const AdminTable = ({dataList, headList}) => {
+export const EditTable = ({dataList, headList}) => {
     const classes = useStyles();
     return (
         <TableContainer className={classes.table} component={Paper}>

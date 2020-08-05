@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button, Typography, Container } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 export const Login = ({auth}) => {
     const authenticated = auth.isAuthenticated();
+    const history = useHistory();
     if (!authenticated) {
         return (
             <Container>
@@ -17,10 +19,6 @@ export const Login = ({auth}) => {
             
         )
     } else {
-        return (
-            <Typography variant="h4" component="h1" gutterBottom>
-                ログインしています
-            </Typography>
-        )
+        history.push("/top");
     };
-}
+};
